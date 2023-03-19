@@ -1,0 +1,13 @@
+D:\DotNet\Project\eShopSolution\eShopSolution.Application\obj\Debug\netcoreapp3.1\eShopSolution.Application.csproj.AssemblyReference.cache
+D:\DotNet\Project\eShopSolution\eShopSolution.Application\obj\Debug\netcoreapp3.1\eShopSolution.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\DotNet\Project\eShopSolution\eShopSolution.Application\obj\Debug\netcoreapp3.1\eShopSolution.Application.AssemblyInfoInputs.cache
+D:\DotNet\Project\eShopSolution\eShopSolution.Application\obj\Debug\netcoreapp3.1\eShopSolution.Application.AssemblyInfo.cs
+D:\DotNet\Project\eShopSolution\eShopSolution.Application\obj\Debug\netcoreapp3.1\eShopSolution.Application.csproj.CoreCompileInputs.cache
+D:\DotNet\Project\eShopSolution\eShopSolution.Application\bin\Debug\netcoreapp3.1\eShopSolution.Application.deps.json
+D:\DotNet\Project\eShopSolution\eShopSolution.Application\bin\Debug\netcoreapp3.1\eShopSolution.Application.dll
+D:\DotNet\Project\eShopSolution\eShopSolution.Application\bin\Debug\netcoreapp3.1\eShopSolution.Application.pdb
+D:\DotNet\Project\eShopSolution\eShopSolution.Application\bin\Debug\netcoreapp3.1\eShopSolution.Data.dll
+D:\DotNet\Project\eShopSolution\eShopSolution.Application\bin\Debug\netcoreapp3.1\eShopSolution.Data.pdb
+D:\DotNet\Project\eShopSolution\eShopSolution.Application\obj\Debug\netcoreapp3.1\eShopSolution.Application.csproj.CopyComplete
+D:\DotNet\Project\eShopSolution\eShopSolution.Application\obj\Debug\netcoreapp3.1\eShopSolution.Application.dll
+D:\DotNet\Project\eShopSolution\eShopSolution.Application\obj\Debug\netcoreapp3.1\eShopSolution.Application.pdb
