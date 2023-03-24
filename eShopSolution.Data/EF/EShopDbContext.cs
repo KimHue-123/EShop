@@ -54,10 +54,10 @@ namespace eShopSolution.Data.EF
         //    //    options.UseSqlServer(Configuration.GetConnectionString("BloggingDatabase")));
         //}
         public DbSet<Product> Products { get; set; }
-        DbSet<Category> Categories { get; set; }
-        DbSet<AppConfig> AppConfigs { get; set; }
-        DbSet<Cart> Carts { get; set; }
-        DbSet<CategoryTranslation> CategoriesTranslations { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<AppConfig> AppConfigs { get; set; }
+        public DbSet<Cart> Carts { get; set; }
+        public DbSet<CategoryTranslation> CategoriesTranslations { get; set; }
         public DbSet<ProductInCategory> ProductInCategories { get; set; }
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<Language> Languages { get; set; }
