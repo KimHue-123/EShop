@@ -87,6 +87,32 @@ namespace eShopSolution.Application.Catalog.Products
             return await _context.SaveChangesAsync();
         }
 
+        public async Task<List<ProductViewModel>> GetAll()
+        {
+            var query = from p in _context.Products
+                        join pt in _context.ProductTranslations on p.Id equals pt.ProductId
+                        join pic in _context.ProductInCategories on p.Id equals pic.ProductId
+                        join c in _context.Categories on pic.CategoryId equals c.Id
+                        select new { p, pt, pic };
+            var data = await query.Select(x => new ProductViewModel()
+            {
+                Id = x.p.Id,
+                Price = x.p.Price,
+                OriginalPrice = x.p.OriginalPrice,
+                Stock = x.p.Stock,
+                ViewCount = x.p.ViewCount,
+                DateCreated = x.p.DateCreated,
+                LanguageId = x.pt.LanguageId,
+                Name = x.pt.Name,
+                Description = x.pt.Description,
+                Details = x.pt.Details,
+                SeoDescription = x.pt.SeoDescription,
+                SeoTitle = x.pt.SeoTitle,
+                SeoAlias = x.pt.SeoAlias
+            }).ToListAsync();
+            return data;
+        }
+
         public async Task<PageResult<ProductViewModel>> GetAllPaging(GetManageProductPagingRequest request)
         {
             //Có cần lưu ý languageId k
