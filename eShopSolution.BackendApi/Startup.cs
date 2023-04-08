@@ -3,6 +3,9 @@ using eShopSolution.Application.Common;
 using eShopSolution.Application.System.Users;
 using eShopSolution.Data.EF;
 using eShopSolution.Data.Entities;
+using eShopSolution.ViewModels.System.Users;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -51,7 +54,11 @@ namespace eShopSolution.BackendApi
 
             services.AddTransient<IUserService, UserService>();
 
-            services.AddControllers();
+            //co 2 cach, cach nay se inject tung service mot vao
+            //services.AddTransient<IValidator<RegisterRequest>, RegisterRequestValidator>();
+
+            services.AddControllers()
+                .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<LoginRequestValidator>()); // cach 2 chi can 1 cai no se tu add toan bo
 
             services.AddSwaggerGen(c =>
             {
